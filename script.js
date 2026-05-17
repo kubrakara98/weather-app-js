@@ -41,8 +41,8 @@ function displayWeather(data){
     const { description } = weather[0];
 
     //hava durumuna göre ikon ekleme
-    const iconUrl="https://openweathermap.org/img/wn/"+weather[0].icon+"@2x.png";
-    weatherResult.innerHTML="<h2>"+name+"</h2>"+"<img src='"+iconUrl+"' alt='Hava İkonu'>"+"<p>Sıcaklık: "+temp+"°C</p>"+ "<p>Durum: "+description+"</p>"+ "<p>Nem: % "+humidity+"</p>"; 
+    const iconUrl=`https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`;
+    weatherResult.innerHTML=`<h2>${name}</h2><img src='${iconUrl}' alt='Hava İkonu'><p>Sıcaklık: ${temp}°C</p><p>Durum: ${description}</p><p>Nem: % ${humidity}</p>`;
 
     const status=description.toLowerCase(); 
     const body=document.body; 
