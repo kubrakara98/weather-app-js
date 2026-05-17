@@ -1,0 +1,72 @@
+body{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:linear-gradient(135deg,#74b9ff,#a29bfe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin: 0;
+}
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+h1 {
+    color: #2d3436;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#weatherForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+#cityInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+#cityInput:focus {
+    border-color: #74b9ff; /* Kutunun içine tıklayınca mavi çerçeve parlasın */
+}
+
+button {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+button:hover {
+    background-color: #74b9ff; /* Fareyle üzerine gelince buton rengi yumuşasın */
+}
+#weatherResult {
+    margin-top: 20px;
+}
+
+#weatherResult h2 {
+    margin: 10px 0;
+    color: #2d3436;
+}
+
+#weatherResult img {
+    width: 100px;
+    height: 100px;
+}
+
+#weatherResult p {
+    margin: 8px 0;
+    color: #636e72;
+    font-size: 16px;
+    font-weight: 500;
+}
